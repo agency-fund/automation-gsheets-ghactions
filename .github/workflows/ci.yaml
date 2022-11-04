@@ -16,4 +16,4 @@ jobs:
     env:
       SHEET: ${{ github.event.client_payload.sheet }}
     steps:
-      - run: echo "The GH Actions workflow was triggered by an edit to the `$SHEET` sheet."
+      - run: echo "The GH Actions workflow was triggered by an edit to the '$SHEET' sheet."
