@@ -1,0 +1,19 @@
+name: ci
+
+on:
+  push:
+    branches: 'main'
+  repository_dispatch:
+    types: [webhook]
+
+concurrency:
+  group: ${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+    env:
+      SHEET: ${{ github.event.client_payload.sheet }}
+    steps:
+      - run: echo 'Successfully triggered the GH Actions workflow based on an edit to the `${SHEET}` sheet.'
