@@ -16,4 +16,4 @@ jobs:
       FILE: ${{ github.event.client_payload.file }}
     steps:
       - name: Output message
-        run: echo "The GitHub Actions workflow was triggered by an edit to the '$SHEET' sheet of '$FILE'."
+        run: echo "The GitHub Actions workflow was triggered by an edit to the '$SHEET' sheet of $FILE."
