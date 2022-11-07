@@ -39,6 +39,6 @@
 1. Copy the URL of the new GitHub repo and paste it in the cell below repo_url.
 
 ## Modifying a replicated system
-1. To enable or disable the triggering of the GH Actions workflow, change the value below "enabled" in the github sheet to 1 or 0.
-1. To change which sheets (when values in them are modified) trigger the GH Actions workflow, change the values below "sheet_name" in the triggers sheet.
-1. To change what the GH Actions workflow actually does, update the .github/workflows/ci.yaml file.
+- To enable or disable the triggering of the GH Actions workflow, change the value below "enabled" in the github sheet to 1 or 0.
+- To change which sheets (when values in them are modified) trigger the GH Actions workflow, change the values below "sheet_name" in the triggers sheet.
+- To change what the GH Actions workflow actually does, update the .github/workflows/ci.yaml file.
