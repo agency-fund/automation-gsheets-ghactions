@@ -2,7 +2,7 @@
 
 ## Overview
 
-- triggering event: A value in a Google Spreadsheet is modified. *Does not detect changes in formatting or changes to the spreadsheet's structure, e.g., insertion of a row or a sheet. See more details [here](https://developers.google.com/apps-script/guides/triggers/installable).*
+- triggering event: A value in a Google Spreadsheet is modified. *Does not detect changes in formatting or changes to the spreadsheet's structure, e.g., insertion of a row or a sheet.*
 - resulting action: GitHub Actions workflow. *Currently just outputs a message about which sheet was edited.*
  
 ## Components
@@ -50,3 +50,9 @@
 - To enable or disable the triggering of the GH Actions workflow, change the value below "enabled" in the github sheet to 1 or 0.
 - To change which sheets (when values in them are modified) trigger the GH Actions workflow, change the values below "sheet_name" in the triggers sheet.
 - To change what the GH Actions workflow actually does, update the .github/workflows/ci.yaml file.
+
+## External documentation
+
+- https://developers.google.com/apps-script/guides/triggers/installable
+- https://developers.google.com/apps-script/reference/url-fetch/url-fetch-app
+- https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#repository_dispatch
